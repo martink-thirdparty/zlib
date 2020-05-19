@@ -33,11 +33,11 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\property sheets\MartinK build settings.props" />
+    <Import Project="..\..\property-sheets\build settings.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\property sheets\MartinK build settings.props" />
+    <Import Project="..\..\property-sheets\build settings.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -63,34 +63,34 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="source\adler32.c" />
-    <ClCompile Include="source\compress.c" />
-    <ClCompile Include="source\deflate.c" />
-    <ClCompile Include="source\gzclose.c" />
-    <ClCompile Include="source\gzlib.c" />
-    <ClCompile Include="source\gzread.c" />
-    <ClCompile Include="source\gzwrite.c" />
-    <ClCompile Include="source\infback.c" />
-    <ClCompile Include="source\inffast.c" />
-    <ClCompile Include="source\inflate.c" />
-    <ClCompile Include="source\inftrees.c" />
-    <ClCompile Include="source\trees.c" />
-    <ClCompile Include="source\uncompr.c" />
-    <ClCompile Include="source\zutil.c" />
-    <ClCompile Include="source\crc32.c" />
+    <ClCompile Include="vanilla\adler32.c" />
+    <ClCompile Include="vanilla\compress.c" />
+    <ClCompile Include="vanilla\deflate.c" />
+    <ClCompile Include="vanilla\gzclose.c" />
+    <ClCompile Include="vanilla\gzlib.c" />
+    <ClCompile Include="vanilla\gzread.c" />
+    <ClCompile Include="vanilla\gzwrite.c" />
+    <ClCompile Include="vanilla\infback.c" />
+    <ClCompile Include="vanilla\inffast.c" />
+    <ClCompile Include="vanilla\inflate.c" />
+    <ClCompile Include="vanilla\inftrees.c" />
+    <ClCompile Include="vanilla\trees.c" />
+    <ClCompile Include="vanilla\uncompr.c" />
+    <ClCompile Include="vanilla\zutil.c" />
+    <ClCompile Include="vanilla\crc32.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\deflate.h" />
-    <ClInclude Include="source\gzguts.h" />
-    <ClInclude Include="source\inffast.h" />
-    <ClInclude Include="source\inffixed.h" />
-    <ClInclude Include="source\inflate.h" />
-    <ClInclude Include="source\inftrees.h" />
-    <ClInclude Include="source\trees.h" />
-    <ClInclude Include="source\zutil.h" />
+    <ClInclude Include="vanilla\deflate.h" />
+    <ClInclude Include="vanilla\gzguts.h" />
+    <ClInclude Include="vanilla\inffast.h" />
+    <ClInclude Include="vanilla\inffixed.h" />
+    <ClInclude Include="vanilla\inflate.h" />
+    <ClInclude Include="vanilla\inftrees.h" />
+    <ClInclude Include="vanilla\trees.h" />
+    <ClInclude Include="vanilla\zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="source\win32\zlib1.rc" />
+    <ResourceCompile Include="vanilla\win32\zlib1.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
